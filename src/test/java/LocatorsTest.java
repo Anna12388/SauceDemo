@@ -8,12 +8,12 @@ public class LocatorsTest extends BaseTest{
 
             driver.get(URL);
 
-            WebElement usernameField = driver.findElement(By.name("user-name"));
-            WebElement passWord = driver.findElement(By.id("password"));
+            WebElement username = driver.findElement(By.name("user-name"));
+            WebElement password = driver.findElement(By.id("password"));
             WebElement loginButton = driver.findElement(By.className("btn_action"));
 
-            usernameField.sendKeys("standard_user");
-            passWord.sendKeys("secret_sauce");
+            username.sendKeys("standard_user");
+            password.sendKeys("secret_sauce");
             loginButton.click();
 
             WebElement productCard = driver.findElement(By.xpath("//*[@id=\"item_4_title_link\"]/div"));

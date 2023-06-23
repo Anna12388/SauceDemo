@@ -12,7 +12,7 @@ public class BaseTest {
     String URL = "https://www.saucedemo.com/";
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -20,8 +20,9 @@ public class BaseTest {
 
     }
     @AfterMethod(alwaysRun = true)
-    public void tearDown(){
+    public void tearDown() {
         driver.quit();
 
     }
 }
+
